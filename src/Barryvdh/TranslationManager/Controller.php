@@ -48,8 +48,9 @@ class Controller extends BaseController
             ->with('numChanged', $numChanged)
             ->with('editUrl', URL::action(get_class($this).'@postEdit', array($group)))
             ->with('searchUrl', URL::action(get_class($this).'@getSearch'))
-            ->with('deleteEnabled', $this->manager->getConfig('delete_enabled')),
-			->with('addEnabled', $this->manager->getConfig('add_enabled'))            ->with('readOnly', $this->manager->getConfig('read_only'))
+            ->with('deleteEnabled', $this->manager->getConfig('delete_enabled'))
+			->with('addEnabled', $this->manager->getConfig('add_enabled'))
+            ->with('readOnly', $this->manager->getConfig('read_only'))
             ->with('showKeys', $this->manager->getConfig('show_keys'))
             ;
     }
