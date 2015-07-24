@@ -50,6 +50,7 @@ class Controller extends BaseController
             ->with('searchUrl', URL::action(get_class($this).'@getSearch'))
             ->with('deleteEnabled', $this->manager->getConfig('delete_enabled'))
             ->with('readOnly', $this->manager->getConfig('read_only'))
+            ->with('showKeys', $this->manager->getConfig('show_keys'))
             ;
     }
     

@@ -22,8 +22,14 @@ return array(
 	 *	)
 	 */
 	'exclude_groups' => array(),
+
 	/**
 	 * this allows certain languages to being disabled for editing
 	 */
-	'read_only' => array()
+	'read_only' => array(),
+
+	/**
+	 * If keys should be visible
+	 */
+	'show_keys' => true
 );
